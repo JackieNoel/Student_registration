@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>New Student Registration</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <link rel="stylesheet" href="{{url_for('static', filename='/style/style.css')}}">
+</head>
+
+<body>
+    <div>
+        <h1>Welcome!</h1>
+        <div class="container h-100">
+            <div class="row h-100 justify-content-center align-items-center">
+                <div class="col-10 col-md-8 col-lg-6">
+                    <!-- Form -->
+                    <form class="form-example" action="/create" method="post">
+                        <h1>New Student Registration</h1>
+                        <p class="description">Please complete the form below wiht your student information.</p>
+                        <!-- Input fields -->
+                        <button type="button" class="btn btn-success btn-customized"> <a
+                                href="/go_home">Home</a></button>
+
+                        <div class="form-group mb-3">
+                            <label for="first_name">First Name:</label>
+                            <input type="text" class="form-control first_name" name="first_name">
+                        </div>
+                        <div class="form-group mb-3">
+                            <label for="last_name">Last Name:</label>
+                            <input type="text" class="form-control last_name" name="last_name">
+                        </div>
+                        <div class="form-group mb-3">
+                            <label for="occupation">Occupation:</label>
+                            <input type="text" class="form-control occupation" name="occupation">
+                        </div>
+                        <div class="form-group mb-3">
+                            <label for="pet_name">Pet's Name:</label>
+                            <input type="text" class="form-control pet_name" name="pet_name">
+                        </div>
+                        <div class="form-group mb-3">
+                            <label for="favorite_snack">Favorite Snack:</label>
+                            <input type="text" class="form-control favorite_snack" name="favorite_snack">
+                        </div>
+                        <button type="submit" class="btn btn-primary btn-customized">Register</button>
+
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+</body>
+
+</html>
